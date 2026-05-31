@@ -1,12 +1,4 @@
-from database import conectar
+from produto import menu
 
-print("INICIANDO TESTE...")
-
-try:
-    conexao = conectar()
-    print("Conexão realizada com sucesso!")
-    conexao.close()
-
-except Exception as erro:
-    print("ERRO COMPLETO:")
-    print(repr(erro))
+if __name__ == "__main__":
+    menu()
