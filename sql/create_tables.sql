@@ -1,0 +1,8 @@
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    marca VARCHAR(100),
+    quantidade INTEGER NOT NULL DEFAULT 0,
+    valor NUMERIC(10,2) NOT NULL,
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
